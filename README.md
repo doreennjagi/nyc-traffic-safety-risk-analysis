@@ -68,6 +68,40 @@ City agencies face persistent challenges:
 
 ---
 
+## Visual Insights
+
+To highlight key findings from the NYC Traffic Safety Analytics (2020) project, the following visuals summarize severity-weighted risks and actionable insights for city planners.
+
+---
+
+### Borough Risk Index
+Severity-weighted score per crash across NYC boroughs.  
+This identifies which boroughs experience disproportionately severe crashes, helping prioritize enforcement and infrastructure interventions.
+
+![Borough Risk Index](borough_risk_index.png)
+
+---
+
+### Top Contributing Factors by Severity
+Behavioral and vehicle-related causes ranked by total severity score.  
+Highlights which driver behaviors are most associated with injuries and fatalities, supporting targeted public safety campaigns.
+
+![Top Contributing Factors](top_factors_severity.png)
+
+---
+
+### Top Streets / Hotspots
+Street intersections with the highest cumulative severity scores.  
+Pinpoints high-impact locations for focused enforcement, traffic calming measures, or infrastructure improvements.
+
+![Top Streets by Severity](top_streets_severity.png)
+
+---
+
+> **Note:** All metrics are **severity-weighted**, emphasizing injury and fatality impact rather than crash frequency alone.
+
+---
+
 ## Value Delivered
 - Moves beyond descriptive statistics to **severity-weighted insights**  
 - Provides **prioritized risk signals** for enforcement and infrastructure planning  
