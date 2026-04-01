@@ -1,34 +1,37 @@
 # NYC Traffic Safety Analytics (2020)
 
 ## Project Overview
+
 Analyzes NYC Motor Vehicle Collisions (2020) to identify **where, why, and which factors drive severe crashes**. Focus is on **severity, risk prioritization, and actionable insights** for city agencies to make **data-driven safety interventions**.
 
 ## Problem Statement
-City agencies face persistent challenges:  
 
-- Distinguishing high-impact crashes from minor incidents  
-- Prioritizing locations, behaviors, and vehicle types for intervention  
-- Avoiding reliance on raw counts that ignore injury/fatality risk  
+City agencies face persistent challenges:
 
-**Core Question:**  
+* Distinguishing high-impact crashes from minor incidents
+* Prioritizing locations, behaviors, and vehicle types for intervention
+* Avoiding reliance on raw counts that ignore injury/fatality risk
+
+**Core Question:**
 > How can NYC **deploy enforcement and infrastructure resources effectively** based on crash severity?
 
 ### Gap Addressed
-- Existing data is descriptive — agencies know where crashes occur, but **not where they cause the most harm**  
-- No severity-weighted view of contributing factors, vehicles, or locations  
-- Limited prioritization for **resource allocation and policy action**  
+* Existing data is descriptive — agencies know where crashes occur, but **not where they cause the most harm**
+* No severity-weighted view of contributing factors, vehicles, or locations
+* Limited prioritization for **resource allocation and policy action**
 
 ---
 
 ## Dataset
-- **Source:** `NYC Accidents 2020.csv`  
-- **Unit of Analysis:** Individual crash events  
-- **Domain:** Urban safety / transportation risk  
-- **Data Quality Challenges:** Missing values, inconsistent categorical entries, uneven geographic coverage  
+
+* **Source:** `NYC Accidents 2020.csv`
+* **Unit of Analysis:** Individual crash events
+* **Domain:** Urban safety / transportation risk
 
 ### Key Fields
+
 | Field | Purpose |
-|-------|---------|
+| --- | --- |
 | `CRASH_DATE` | Temporal trends & seasonality |
 | `BOROUGH` | Borough-level risk segmentation |
 | `LATITUDE`, `LONGITUDE` | Geospatial analysis & hotspot identification |
@@ -38,87 +41,83 @@ City agencies face persistent challenges:
 | `VEHICLE_TYPE_CODE_1` | Vehicle type in severe crashes |
 | `ON_STREET_NAME` / `CROSS_STREET_NAME` | Street-level risk prioritization |
 
-> **Note:** Time-of-day analysis skipped due to missing `CRASH_TIME` values. Focus remains on **severity-weighted insights**.
-
 ---
 
 ## Analytical Approach
-1. **Data Cleaning & Feature Engineering**  
-   - Standardized columns and cleaned coordinates  
-   - Created **severity flags** (`INJURY_FLAG`, `FATALITY_FLAG`) and a **weighted `SEVERITY_SCORE`**
 
-2. **Severity-Centered Metrics**  
-   - Prioritized crashes by injury/fatality impact rather than frequency  
-
-3. **Risk Segmentation**  
-   - Analyzed **boroughs, streets, contributing factors, and vehicle types** by severity  
-
-4. **Spatial Prioritization & Visualization**  
-   - Generated **hotspot maps** and top streets to highlight high-impact locations  
+1. **Data Cleaning & Feature Engineering** — Standardized columns, cleaned coordinates, created severity flags and weighted `SEVERITY_SCORE`
+2. **Severity-Centered Metrics** — Prioritized crashes by injury/fatality impact rather than frequency
+3. **Risk Segmentation** — Analyzed boroughs, streets, contributing factors, and vehicle types by severity
+4. **Spatial Prioritization & Visualization** — Generated hotspot maps and top streets to highlight high-impact locations
 
 ---
 
 ## Key Performance Indicators (KPIs)
-- **Injury Rate per Crash** – injuries normalized per incident  
-- **Fatality Rate per 1,000 Crashes** – normalized lethality measure  
-- **Severe Crash Share** – % of crashes with ≥1 injury or fatality  
-- **Borough Risk Index** – severity-weighted comparison across boroughs  
-- **Top Contributing Factors & Vehicle Types by Severity** – behavioral and vehicle risks  
-- **Top Streets / Hotspots** – recurring high-severity locations  
+
+* **Injury Rate per Crash** — injuries normalized per incident
+* **Fatality Rate per 1,000 Crashes** — normalized lethality measure
+* **Severe Crash Share** — % of crashes with ≥1 injury or fatality
+* **Borough Risk Index** — severity-weighted comparison across boroughs
+* **Top Contributing Factors & Vehicle Types by Severity**
+* **Top Streets / Hotspots** — recurring high-severity locations
 
 ---
 
 ## Visual Insights
 
-To highlight key findings from the NYC Traffic Safety Analytics (2020) project, the following visuals summarize severity-weighted risks and actionable insights for city planners.
-
----
-
 ### Borough Risk Index
-Severity-weighted score per crash across NYC boroughs.  
-This identifies which boroughs experience disproportionately severe crashes, helping prioritize enforcement and infrastructure interventions.
+Severity-weighted score per crash across NYC boroughs.
 
 ![Borough Risk Index](borough_risk_index.png)
 
 ---
 
 ### Top Contributing Factors by Severity
-Behavioral and vehicle-related causes ranked by total severity score.  
-Highlights which driver behaviors are most associated with injuries and fatalities, supporting targeted public safety campaigns.
+Behavioral and vehicle-related causes ranked by total severity score.
 
 ![Top Contributing Factors](top_factors_severity.png)
 
 ---
 
 ### Top Streets / Hotspots
-Street intersections with the highest cumulative severity scores.  
-Pinpoints high-impact locations for focused enforcement, traffic calming measures, or infrastructure improvements.
+Street intersections with the highest cumulative severity scores.
 
 ![Top Streets by Severity](top_streets_severity.png)
 
 ---
 
-> **Note:** All metrics are **severity-weighted**, emphasizing injury and fatality impact rather than crash frequency alone.
-
----
-
 ## Value Delivered
-- Moves beyond descriptive statistics to **severity-weighted insights**  
-- Provides **prioritized risk signals** for enforcement and infrastructure planning  
-- Answers **where crashes cause the most harm**, not just where they occur  
+
+* Moves beyond descriptive statistics to **severity-weighted insights**
+* Provides **prioritized risk signals** for enforcement and infrastructure planning
+* Answers **where crashes cause the most harm**, not just where they occur
 
 ---
 
 ## Skills Demonstrated
-- Data cleaning & feature engineering for **messy, real-world datasets**  
-- Severity-focused KPI design and **risk segmentation**  
-- Geospatial analysis and hotspot visualization  
-- Analytical storytelling tailored for **policy and operational decision-makers**  
+
+* Data cleaning & feature engineering for messy, real-world datasets
+* Severity-focused KPI design and risk segmentation
+* Geospatial analysis and hotspot visualization
+* Analytical storytelling tailored for policy and operational decision-makers
 
 ---
 
 ## Next Steps / Extensions
-1. Integrate additional years for trend analysis  
-2. Explore external factors (weather, traffic volume) to refine risk segmentation  
-3. Develop **interactive dashboards** for city planners  
-4. Extend to **predictive modeling** for proactive safety interventions  
+
+1. Integrate additional years for trend analysis
+2. Explore external factors (weather, traffic volume) to refine risk segmentation
+3. Develop interactive dashboards for city planners
+4. Extend to predictive modeling for proactive safety interventions
+
+---
+
+## About Me
+
+Hi, I'm **Doreen Njagi** — a Data Analyst with a background in Mathematics and Computer Science, based in Nairobi, Kenya 🇰🇪.
+
+I specialize in SQL, Python, Excel, Power BI, and Tableau — turning raw data into clear, actionable insights.
+
+* 📫 [LinkedIn](https://www.linkedin.com/in/doreen-njagi-196350389/)
+* 🌐 [Portfolio](https://doreennjagi.github.io/reen-data-portfolio)
+* 🐙 [GitHub](https://github.com/doreennjagi)
